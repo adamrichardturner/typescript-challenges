@@ -12,7 +12,7 @@ export function descendingOrder(n: number): number {
 
     Input: 123456789 Output: 987654321
     */
-    return Number(n.toString().split('').sort((a, b) => (b.charCodeAt(0)) - a.charCodeAt(0)).join(''))
+    return +(n.toString().split('').sort((a, b) => (b.charCodeAt(0)) - a.charCodeAt(0)).join(''))
 }
 
 console.log(descendingOrder(42145)) // 54421

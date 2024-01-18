@@ -15,7 +15,7 @@ function descendingOrder(n) {
 
     Input: 123456789 Output: 987654321
     */
-    return Number(n.toString().split('').sort(function (a, b) { return (b.charCodeAt(0)) - a.charCodeAt(0); }).join(''));
+    return +(n.toString().split('').sort(function (a, b) { return (b.charCodeAt(0)) - a.charCodeAt(0); }).join(''));
 }
 exports.descendingOrder = descendingOrder;
 console.log(descendingOrder(42145)); // 54421
