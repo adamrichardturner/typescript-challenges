@@ -1,6 +1,6 @@
 export class Kata {
-    static squareDigits(num: number): number {
-      /*
+  static squareDigits(num: number): number {
+    /*
       Welcome. 
       
       In this kata, you are asked to square every digit 
@@ -14,9 +14,13 @@ export class Kata {
 
       Note: The function accepts an integer and returns an integer.
       */
-      return +(num.toString().split('').map(n => (+n) ** 2)).join('')
-    }
+    return +num
+      .toString()
+      .split('')
+      .map((n) => (+n) ** 2)
+      .join('')
   }
+}
 
 console.log(Kata.squareDigits(9119)) // 811181
 console.log(Kata.squareDigits(765)) // 493625

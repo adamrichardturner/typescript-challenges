@@ -16,7 +16,7 @@ export function sumCubes(n: number): number {
   const range: number[] = []
 
   // Iterate from 1 to n and push to range i^3
-  for(let i = 1; i <= n; i++) {
+  for (let i = 1; i <= n; i++) {
     range.push(Math.pow(i, 3))
   }
 

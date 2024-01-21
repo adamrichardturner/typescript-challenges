@@ -1,5 +1,5 @@
 export function descendingOrder(n: number): number {
-    /*
+  /*
     Your task is to make a function that can take any non-negative integer as 
     an argument and return it with its digits in descending order. 
     
@@ -12,7 +12,11 @@ export function descendingOrder(n: number): number {
 
     Input: 123456789 Output: 987654321
     */
-    return +(n.toString().split('').sort((a, b) => (b.charCodeAt(0)) - a.charCodeAt(0)).join(''))
+  return +n
+    .toString()
+    .split('')
+    .sort((a, b) => b.charCodeAt(0) - a.charCodeAt(0))
+    .join('')
 }
 
 console.log(descendingOrder(42145)) // 54421
