@@ -1,5 +1,5 @@
 export class Kata {
-    static squareDigits(num: number): any {
+    static squareDigits(num: number): number {
       /*
       Welcome. 
       
