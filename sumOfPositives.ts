@@ -9,5 +9,5 @@ export function positiveSum(arr: number[]): number {
   return arr.filter((a) => a > 0).reduce((a, b) => a + b, 0)
 }
 
-console.log(positiveSum([1, 2, 3, 4, 5]))
-console.log(positiveSum([1, -4, 7, 12]))
+console.log(positiveSum([1, 2, 3, 4, 5])) // 15
+console.log(positiveSum([1, -4, 7, 12])) // 20
