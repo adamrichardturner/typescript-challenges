@@ -6,7 +6,7 @@ export function positiveSum(arr: number[]): number {
 
     Note: if there is nothing to sum, the sum is default to 0.
   */
-  return arr.filter((a) => a > 0).reduce((a, b) => a + b, 0)
+  return arr.reduce((a, b) => a + b, 0)
 }
 
 console.log(positiveSum([1, 2, 3, 4, 5])) // 15
